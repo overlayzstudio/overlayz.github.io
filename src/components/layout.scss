@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+// Reset end
+
+
+// Variables
+$font-name: 'Darker Grotesque', sans-serif;
+$black: #000;
+$dark-grey: #242424;
+$white: #fff;
+
+// Breakpoints
+$mobile-landscape: 30rem; // 480px
+$tablet: 40rem; // 640px
+$tablet-wide: 48rem; // 768px
+$desktop: 64rem; // 1024px
+$widescreen: 71.25rem; // 1140px
+
+// End Varaiables
+
+
+html,body{
+	background: $dark-grey;
+	background-image: url('/dots.png');
+}
+a,h1,h2,h3,h4,h5,h6,p,{
+	color: $white;
+}
+
+body{
+ font-family: $font-name;
+ overflow: hidden;
+
+}
+
+// Basic layout
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: $tablet-wide){
+      width: 100%;
+  }
+}
+
+main{
+	position: relative;
+}
+
+.bg-wrapper{
+	width: 100%;
+	.gradient-1{
+			position: absolute;
+			top: -1000px;
+			right: -500px;
+	}
+	.gradient-2{
+			width: 1800px;
+			position: absolute;
+			bottom: -1400px;
+			left: -900px;
+	}
+}
+.main-box{
+	color: $white;
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	img{
+		width: 600px;
+	}
+	h1{
+		font-size: 48px;
+		font-weight: 200;
+		margin-bottom: 12px;
+	}
+
+	a{
+		display: inline-flex;
+		justify-content: center;
+		margin-top: 24px;
+		text-decoration: none;
+		font-size: 24px;
+		line-height: 100%;
+		border: 1px solid $white;
+		padding: 12px 30px;
+		border-radius: 25px;
+	}
+}
