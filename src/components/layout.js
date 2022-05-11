@@ -25,13 +25,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <main>
-        <div className="bg-wrapper">
-          <img className="gradient-1" src="/gradients.svg" />
-          <img className="gradient-2" src="/gradients-2.svg" />
-        </div>
-        <div className="container">
+  
           {children}
-        </div>
 
       </main>
     </>
